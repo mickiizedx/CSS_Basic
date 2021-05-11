@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block level element</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <style>
+        /* Block and Inline display */
+        /* There are 3  types of display as ; inline , block and */
+        h2 {
+            font-family: 'Dancing Script', cursive;;
+            color: #524f95;
+        }
+
+        li {
+            display: inline;
+            color: tomato;
+            font-family: 'Caveat', cursive;;
+        }
+
+        li a {
+            padding-right: 20px;
+            text-decoration: wavy;
+        }
+
+
+        /* Change image from inline to block */
+        img {
+            display: block;
+            margin-bottom: 25px;
+            border-radius: 40%;
+            /* margin: auto */
+        }
+
+
+        .card {
+            width: 32.8%;
+            display: inline-block;
+            box-sizing: border-box;
+            background: #e6e6fa;
+
+            border: #3d5ba5 3px solid;
+            border-radius: 10px;
+
+            padding: 15px;
+            margin: 10px auto;
+
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Inline and Block display</h2>
+
+    <ul>
+        <li><a href="#">Mickey Mouse</a></li>  
+        <li><a href="#">Minnie Mouse</a></li>
+        <li><a href="#">Donald Duck</a></li>
+        <li><a href="#">Daisy Duck</a></li>
+    </ul> 
+<br>
+<br>
+<br>
+
+<!-- Inline image -->
+<img src="/image/disney.jpg" alt="disney" width=300px heigh=200px>
+<img src="/image/disney.jpg" alt="disney" width=300px heigh=200px>
+
+
+<div class="card">
+    <h2>Heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+</div>
+
+<div class="card">
+    <h2>Heading</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+        
+</div>
+
+
+<div class="card">
+    <h2>Heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint </p>
+       
+</div>
+
+
+
+
+
+    
+</body>
+</html>

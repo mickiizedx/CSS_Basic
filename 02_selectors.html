@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector in CSS</title>
+    <!-- Selector in CSS -->
+
+    <style>
+        /* Naiming convention is important */
+        /* Use . to style with class */
+        /* Use # to style with id */
+
+        body {
+            background-color: aliceblue;
+        }
+
+        /* Styling with class */
+        .Primary-text {
+            color: lightseagreen;
+        }
+
+        .Secoundary-text {
+            color: rgb(10, 33, 75);
+        }
+
+
+        /* Styling with id */
+        #main {
+            background-color: antiquewhite;
+        }
+
+
+        #topic {
+            background-color: beige;
+        }
+
+
+        /* Styling with multiple elements */
+        #main , #topic {
+            border: 4px rgb(3, 53, 53) solid;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+
+        /* Styling with nested elements */
+        #main p, #topic p {
+            font-weight: bold;
+        }
+
+
+        /* Styling with Fonts familly */
+        #topic p {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div id="main">
+        <h2 class="Primary-text">Tech it easy</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore natus officiis 
+            tempora sequi sapiente, eaque cupiditate quos nulla delectus quod quisquam 
+            nisi neque aliquam laborum obcaecati voluptate distinctio at culpa?</p>
+    </div>
+
+
+    <div id="topic">
+        <h2 class="Secoundary-text">Software Engineering</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil eligendi 
+            exercitationem, similique quas soluta cupiditate repudiandae quae aspernatur 
+            necessitatibus rerum esse. Repellat sit nostrum amet suscipit eum saepe quos 
+            minima?</p>
+    </div>
+    
+</body>
+</html>

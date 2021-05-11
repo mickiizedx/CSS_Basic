@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+
+    <!-- Positioning
+    position values :
+
+    static : not affected (Top , Botton , Left ,Right)
+             for properties and value
+
+    Relative : affected by (Top , Botton , Left ,Right)
+             for properties and value
+
+    Sticky : its position based on scroll
+
+    fix : its position to the browser (viewport)
+
+    Absolute : positioned relative to its parent element.
+               (parent element should be always relative)-->
+
+
+
+    <!-- How to position absolute-->
+    <!-- Step 1: The outter div or container should be position relative
+         Step 2 : The inner div or container can be absolute to be positioned
+         *** if there no parent it will use body as parent-->
+    <style>
+        body {
+            height: 5000px;
+        }
+
+        .card {
+            width: 200px;
+            height: 200px;
+        }
+
+        .container {
+            position: relative;
+            background-color: skyblue;
+            width: 500px;
+            height: 500px;
+
+            border-radius: 30px;
+        }
+
+
+        #card-1 {
+            position: relative;
+
+            background-color: papayawhip;
+            top: 100px;
+            left: 100px;
+
+            border-radius: 30px;
+            /* bring to front */
+            z-index: 1;
+        }
+
+
+        #card-2 {
+            position: absolute;
+            background: lightsalmon;
+            top: 100px;
+            left: 50px;
+
+            border-radius: 50%;
+        }
+        
+        #card-3 {
+            position: absolute;
+            background: lightpink;
+            bottom: 100px;
+            right: 100px;
+
+            border-radius: 50%;
+        }
+
+        #card-4 {
+            position: fixed;
+            background-color: lightcyan;
+            border-radius: 30px;
+        }
+
+        #card-5 {
+            position: sticky;
+            background-color: blanchedalmond;
+            border-radius: 30px;
+            top: 0;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <div id="card-1" class="card"></div>
+
+    <div class="container">
+        <div id="card-2" class="card"></div>
+        <div id="card-3" class="card"></div>
+    </div>
+    
+    <div id="card-4" class="card"></div>
+    <div id="card-5" class="card"></div>
+
+    
+    
+</body>
+</html>

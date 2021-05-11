@@ -1,0 +1,130 @@
+<!-- Create html file : stylingpractice01 -->
+<!--  Create header (semantic tag) > text -->
+<!--  Create main (semantic tag) > h2 , p(lorem20)-->
+<!-- Create div : (id = contact) > ul 3*li (address, phone , email)-->
+<!-- Create footer (semantic tag) p(lorem10)-->
+
+
+
+<!-- styling : border, background color, 
+padding, margin , 
+hex color, 
+import robot font-->
+
+
+<!-- implement your CSS -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stylingpractice01</title>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- font-family: 'Roboto', sans-serif; -->
+
+    <style>
+
+        body {
+            font-family: 'Roboto', sans-serif;;
+        }
+        
+        header {
+            text-align: center;
+            font-family: 'Caveat', cursive;;
+            font-size: 100px;
+            color: #12253f;
+            
+            
+            background-image: url(/image/colorful.jpg);
+            background-repeat: no-repeat;
+            background-position: center top;
+            
+        
+            border-radius: 10px;
+        }
+
+        #word h4 {
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Dancing Script', cursive;;
+            color: #c6acd2;
+        }
+
+        .hightlight-text{
+            color: tomato;
+            font-family: ;
+
+        }
+
+        #main {
+            padding-top: 5px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            padding-left: 15px;
+        }
+
+        #contact {
+            margin: 30px;
+            padding: 5px 10px 5px 15px;
+
+            background-color: rgb(221, 239, 247);
+            border-radius: 20px;
+        }
+
+        footer {
+            color: #12253f;
+            padding: 10px 10px;
+            margin-left: 30px;
+        }
+
+    </style>
+
+</head>
+<body>
+<br>
+<br>
+
+   
+        <div>
+            <header>Styling Practice 01</header>
+        </div>
+        
+        <div id="word">
+
+            <h4>I love those who can smile in trouble.</h4>
+        </div>
+
+        <div id="main">
+            <h2>Main</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, consequuntur saepe! 
+                Maxime, aliquam cum! <span class="hightlight-text"> Laboriosam earum autem doloribus temporibus. Hic.</span></p>
+
+        </div>
+
+        <hr>
+
+
+        <div id="contact">
+            <h2>Contact</h2>
+            <ul>
+                <li>Address : Bangkok, Thailand</li>
+                <li>Phone : +66 (123) 4567</li>
+                <li>Email : wirinporns@airasia.com</li>
+            </ul>
+        </div>
+
+        <footer><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, perferendis.</p></footer>
+   
+    
+    
+</body>
+</html>

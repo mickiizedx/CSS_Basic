@@ -1,0 +1,25 @@
+CSS
+
+Comment 
+/* */
+
+
+
+ /* Naiming convention is important */
+        /* Use . to style with class */
+        /* Use # to style with id */
+
+
+Use to find the color code that you want
+https://www.color-hex.com
+
+
+text-align: justify;
+****  /* justify : is kinda like the text-align version of margin's auto */
+
+<i></i> = icon 
+
+Website to looking for fonts
+https://fontawesome.com/icons?d=gallery&p=2
+setup kit
+https://fontawesome.com/how-to-use/customizing-wordpress/snippets/setup-kit

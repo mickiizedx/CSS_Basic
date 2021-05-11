@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align</title>
+
+<style>
+        h2 {
+            color: #12253f;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4em;
+            color: #738ebd;
+        }
+
+
+        /* How to center your content */
+        /* Step 1 : Wrap content to class or id
+           Step 2 : to set width and set the margin to auto */
+        
+           /* Note :  margin auto set the same amount to the both sides 
+           and push the content in the middle */
+
+           .wrap {
+               /* if use width , it won't be responsive on mobile  */
+               width: 900px;
+               margin: 50px auto;
+           }
+
+           .card {
+               background: rgb(250, 247, 241);
+               border:#c6acd2 ;
+               border-radius: 20px;
+
+               padding: 20px;
+               margin-bottom: 30px;
+           }
+
+           /* How to align text by default */
+           .card p {
+               text-align: left;
+               text-align: right;
+               text-align: center;
+
+               /* It makes the text justify to the content 
+               (its gonna be even on the edege) */
+
+               /* justify : is kinda like the text-align version of margin's auto */
+               text-align: justify;
+           }
+
+           .card h2 {
+               text-align: center;
+           }
+
+           .card2 {
+            width: 32.8%;
+            display: inline-block;
+            box-sizing: border-box;
+            background: #f0e3e6;
+
+            border: #ff7c7c 3px solid;
+            border-radius: 10px;
+
+            padding: 15px;
+            margin: 10px auto;
+
+            color: #626262;
+        }
+
+            .card2 h2 {
+                text-align: center;
+            }
+
+</style>
+
+</head>
+<body>
+    
+<div class="wrap">
+
+    <div id="home" class="card">
+        <h2>Tech is Easy</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias 
+            beatae temporibus tempore cupiditate facilis possimus inventore 
+            voluptatum at nam autem. Et cum modi dignissimos excepturi adipisci 
+            ad fuga deserunt magnam!</p>
+    </div>
+    
+    <div id="about" class="card">
+        <h2>Rad Beat Academy</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias 
+            beatae temporibus tempore cupiditate facilis possimus inventore 
+            voluptatum at nam autem. Et cum modi dignissimos excepturi adipisci 
+            ad fuga deserunt magnam!</p>
+    </div>
+    
+    
+    <div id="contact" class="card">
+        <h2>Software Engineering</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias 
+            beatae temporibus tempore cupiditate facilis possimus inventore 
+            voluptatum at nam autem. Et cum modi dignissimos excepturi adipisci 
+            ad fuga deserunt magnam!</p>
+    </div>
+
+
+    <div class="card2">
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    
+    </div>
+    
+    <div class="card2">
+        <h2>Heading</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+            
+    </div>
+    
+    
+    <div class="card2">
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint </p>
+           
+    </div>
+
+</div>
+
+</body>
+</html>
